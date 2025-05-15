@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nosotros - Smart Energy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+     <!-- Incluir jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Incluir Counter-Up -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <!-- Incluir Waypoints -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Favicon -->
+    <link href="./img/favicon.png" rel="icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+     <!-- Topbar Start -->
+     <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-white">
+                    <a class="btn btn-link text-light" href="https://www.facebook.com/profile.php?id=100039844488415&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.linkedin.com/in/smart-energy-ing-1b3b09318/?originalSubdomain=co"><i class="bi bi-linkedin"></i></a>
+                    <a class="btn btn-link text-light" href="https://wa.me/+573106977028"><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.instagram.com/smartenergying/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <span class="fs-5"><i class="fa fa-phone-alt me-2" style="color:#02245B ;"></i></span>
+                    <span class="fs" style="color:#02245B ;">+57 310 6977028</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+    <a href="index.html" class="navbar-brand ps-5 me-0">
+        <img src="/img/LOGO_21_11zon.webp" alt="Logo de Smart Energy" class="logo">
+    </a>
+    
+    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link ">Inicio</a>
+            <a href="about.html" class="nav-item nav-link active">Nosotros</a>
+            <a href="service.html" class="nav-item nav-link">Servicios</a>
+            <a href="project.html" class="nav-item nav-link">Proyectos</a>
+            <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
+        </div>
+        <a href="https://wa.me/+573106977028" class="btn btn-primary px-3 d-none d-lg-block">Cotizar Ahora</a>
+    </div>
+</nav>
+
+    <style>
+
+.nav-item.nav-link.active {
+    color: #007bff; /* Color de texto azul para el enlace activo */
+    font-weight: bold; /* Opcional: pone el texto en negrita */
+}
+
+/* Otras reglas de estilo */
+.navbar {
+    padding: 0 1rem;
+}
+
+.navbar-brand .logo {
+    max-width: 250px; /* Tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción */
+}
+
+.navbar-brand h1 {
+    font-size: 2rem; /* Tamaño del texto del logo */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem; /* Tamaño del texto del menú */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-brand .logo {
+        max-width: 180px; /* Reduce el tamaño del logo */
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del texto del logo */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem; /* Reduce el tamaño del texto del menú */
+    }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .navbar-brand .logo {
+        max-width: 180px; /* Reduce aún más el tamaño del logo */
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.2rem; /* Reduce aún más el tamaño del texto del logo */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.8rem; /* Reduce aún más el tamaño del texto del menú */
+    }
+
+    .btn.btn-primary {
+        font-size: 0.8rem; /* Reduce el tamaño del botón en pantallas pequeñas */
+    }
+}
+</style>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+
+    <div class="container-fluid page-header py-5 mb-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white animated slideInRight">Sobre Nosotros</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb animated slideInRight mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="about.html">Nosotros</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    
+    <style>
+        .page-header {
+            background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url('/img/IMG_nst_17_11zon.webp');
+            background-size: cover; /* Hace que la imagen cubra toda el área */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            padding-top: 3rem; /* Ajusta el padding-top según sea necesario */
+            padding-bottom: 3rem; /* Ajusta el padding-bottom según sea necesario */
+        }
+    
+        .breadcrumb {
+            background: transparent; /* Ajusta el fondo de las migas de pan si es necesario */
+        }
+    
+        .breadcrumb-item a {
+            color: #fff; /* Color de texto para las migas de pan */
+        }
+    </style>
+    <!-- Page Header End -->
+
+
+<!-- Quienes somos  -->
+<section id="somos" class="informacion d-flex justify-content-center align-items-center p-5">
+    <div id="quienesomos" class="text-section">
+        <h1 class="title">¿QUIÉNES SOMOS?</h1>
+        <p class="mb-4">
+            Somos una empresa EPC <strong>(Ingeniería, Suministro y Construcción),</strong> con un manejo especializado en la
+            gerencia de proyectos, basado en los estándares del Project Management Institute, realizamos la ejecución y puesta
+            en marcha de los proyectos, cumpliendo así con los tiempos y presupuestos establecidos desde la formulación del
+            proyecto. Es por esto, que en Colombia contamos con una amplia experiencia en proyectos solares comerciales,
+            industriales y residenciales. <strong>En Smart Energy Ing. Contamos con más de 6.5MW en diferentes sectores
+            económicos.<br></strong> Nuestra empresa otorga certificaciones en calidad para la buena puesta en marcha de los
+            proyectos.
+        </p>
+    </div>
+    <div class="image-section right-image">
+        <img src="/img/FOTOS_QUIENES_SOMOS[1]_10_11zon.webp" alt="Imagen de ¿Quiénes Somos?" width="500" height="500">
+    </div>
+</section>
+
+
+<section class="section-large">
+    <div class="image-container">
+        <div class="image-part partn1">
+            <img src="/img/CASOS_CON_EXITO_Mesa_de_trabajo_1[1]_4_11zon.webp" alt="Partn1">
+        </div>
+        <div class="image-part partn2">
+            <img src="/img/CasososE2 (1)_5_11zon.webp" alt="Partn2">
+        </div>
+    </div>
+</section>
+
+<section class="section-small">
+    <div class="image-container">
+        <div class="image-part partn1">
+            <img src="/img/CASSOOOS_6_11zon.webp" alt="Partn1">
+        </div>
+        <div class="image-part partn2">
+            <img src="/img/SOBRENOSOTROS11_40_11zon.webp" alt="Partn2">
+        </div>
+    </div>
+</section>
+
+    <style>
+        /* Estilos comunes para ambas secciones */
+        .image-container {
+            display: flex;
+            background-color: #051522;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .image-part {
+            flex: 1;
+            margin: 8px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-part img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Estilos para la sección visible en pantallas de 600px o más */
+        .section-large {
+            display: block;
+        }
+
+        .section-small {
+            display: none;
+        }
+
+        /* Media queries para cambiar la visibilidad y disposición según el ancho de la pantalla */
+        @media (max-width: 599px) {
+            .section-large {
+                display: none;
+            }
+            .section-small {
+                display: block;
+            }
+
+            .image-container {
+                flex-direction: column;
+                align-items: center; /* Centra las imágenes horizontalmente */
+            }
+
+            .image-part {
+                margin: 10px 0; /* Reduce el margen vertical entre las imágenes */
+            }
+
+            .image-part img {
+                width: 100%; /* Mantén las imágenes al 100% del contenedor */
+            }
+        }
+    </style>
+
+
+
+<!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row gx-3 h-100">
+                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
+                            <video class="img-fluid" style="border-radius: 7px;" autoplay loop muted>
+                                <source src="videos/ESCALERA.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+                            <video class="img-fluid" style="border-radius: 7px;" autoplay loop muted>
+                                <source src="videos/REEL3..mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">Sobre Nosotros</p>
+                    <h1 class="display-5 mb-4">Construcción, operación y mantenimiento de SFV</h1>
+                    <p class="mb-4">Especialistas en la construcción y operación del sistema solar fotovoltaico, ofrecemos los servicios de diseño, construcción y supervisión de proyectos eléctricos industriales y comerciales. Contamos con un equipo multidisciplinario de profesionales con amplia experiencia para ofrecer soluciones confiables, económicas y eficientes. </p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="flex-shrink-0 bg-primary p-4" style="border-radius: 7px;">
+                            <h1 class="display-2" data-toggle="counter-up" style="line-height: 1.8;">8</h1>
+                            <h5 class="text-white" style="line-height: 0.5;">Años de</h5>
+                            <h5 class="text-white" style="line-height: 0.5;">experiencia</h5>
+                        </div>
+                        <div class="ms-4">
+                            <p><i class="fa fa-check text-primary me-2"></i>Monitoreo, control y gestión de los proyectos instalados.</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Construcción para Sistemas comerciales e Industriales.</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Acompañamiento en la puesta en marcha.</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Mantenimiento.</p>
+                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Ingeniería del detalle.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-2 contact-info">
+                        <div class="col-sm-6 email-info">
+                            <div class="d-flex align-items-center" style="font-size: 0.7rem; padding: 7px;">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary" style="width: 30px; height: 30px;">
+                                    <i class="fa fa-envelope-open text-white" style="font-size: 18px;"></i> 
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2" style="line-height: 0.7;">Email</p>
+                                    <h5 class="mb-0" style="line-height: 0.7;">info@smartenergying.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 phone-info">
+                            <div class="d-flex align-items-center" style="font-size: 0.7rem; padding: 7px;">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary" style="width: 30px; height: 30px;">
+                                    <i class="fa fa-phone-alt text-white" style="font-size: 18px;"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2" style="line-height: 0.7;">Telefono </p>
+                                    <h5 class="mb-0" style="line-height: 0.7;">+57 310 6977028</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <style>
+                    /* Estilo por defecto: email y teléfono en la misma fila */
+                    .contact-info {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .email-info, .phone-info {
+                        width: 50%;
+                    }
+                    
+                    /* Media query para pantallas de menos de 779px */
+                    @media (max-width: 779px) {
+                        .email-info, .phone-info {
+                            width: 100%;
+                        }
+                    }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Facts Start -->
+    <div class="container-fluid facts my-5 p-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">8</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Años de experiencia</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">22</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Equipo</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center border p-5">
+                    <img src="/img/ii+_12_11zon.webp" class="iconoCC">
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up cienmm">100%</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Cobertura Nacional</span>
+                </div>
+            </div>
+            <style>
+            .iconoCC {
+                width: 60px;  /* Ajusta el tamaño según tus necesidades */
+                height: 60px; /* Ajusta el tamaño según tus necesidades */
+                filter: brightness(0) invert(1); /* Cambia el color del icono a blanco */
+            }
+            </style>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">6879</h1>
+                    <span class="fs-5 fw-semi-bold text-white">kWp instalados</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<section id="mision">
+    <div class="container-xxl py-5 ">
+        <div class="row g-5 text">
+            <div class="col-lg-6 wow fadeInUp text-section" data-wow-delay="0.1s">
+                <h1 class="display-5 mb-4">Nuestra Misión</h1>
+                <p class="mb-4" style="margin-bottom: 3rem;">Construir, operar y mantener las instalaciones de sistemas solares
+                    fotovoltaicos, aportando con buenas prácticas constructivas las implementaciones
+                    de energía renovable, en los diferentes sectores, acelerando así a la transición energética
+                    de Colombia, en lucha contra el cambio climático. 
+                </p>
+                <h1 class="display-5 mb-4" style="margin-top: 4rem;">Nuestra Visión</h1>
+                <p class="mb-4">Para el 2025 Smart Energy S.A.S será reconocida dentro de la Región
+                    Caribe como referente en la transición energética, siendo 
+                    catalogada como una organización especializada en la construcción
+                    de sistemas de generación fotovoltaicos, identificados por el trabajo en equipo, la mejora continua y la
+                    satisfacción de sus clientes.
+                </p>
+            </div>
+            <div class="col-lg-6 wow fadeInUp d-flex align-items-center justify-content-center" data-wow-delay="0.1s">
+                <img class="img-fluid" style="width: 90%;  border-radius: 7px;" src="/img/FOTOOOOO_9_11zon.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Vendor Start -->
+
+<div class="finalsec">
+    <div class="image-slider">
+        <img src="./img/smartenergying/1.png" alt="smartenergy1" />
+        <img src="./img/smartenergying/2.png" alt="smartenergy2" />
+        <img src="./img/smartenergying/3.png" alt="smartenergy3" />
+        <img src="./img/smartenergying/4.png" alt="smartenergy4" />
+        <img src="./img/smartenergying/5.png" alt="smartenergy5" />
+        <img src="./img/smartenergying/6.png" alt="smartenergy6" />
+        <img src="./img/smartenergying/7.png" alt="smartenergy7" />
+        <img src="./img/smartenergying/8.png" alt="smartenergy8" />
+        <img src="./img/smartenergying/9.png" alt="smartenergy9" />
+        <img src="./img/smartenergying/10.png" alt="smartenergy10" />
+        <img src="./img/smartenergying/11.png" alt="smartenergy11" />
+        <img src="./img/smartenergying/12.png" alt="smartenergy12" /> 
+        <img src="./img/smartenergying/1.png" alt="smartenergy1" />
+        <img src="./img/smartenergying/2.png" alt="smartenergy2" />
+        <img src="./img/smartenergying/3.png" alt="smartenergy3" />
+        <img src="./img/smartenergying/4.png" alt="smartenergy4" />
+        <img src="./img/smartenergying/5.png" alt="smartenergy5" />
+        <img src="./img/smartenergying/6.png" alt="smartenergy6" />
+        <img src="./img/smartenergying/7.png" alt="smartenergy7" />
+        <img src="./img/smartenergying/8.png" alt="smartenergy8" />
+        <img src="./img/smartenergying/9.png" alt="smartenergy9" />
+        <img src="./img/smartenergying/10.png" alt="smartenergy10" />
+        <img src="./img/smartenergying/11.png" alt="smartenergy11" />
+        <img src="./img/smartenergying/12.png" alt="smartenergy12" /> 
+      <!-- Agrega más imágenes según sea necesario -->
+    </div>
+  </div>
+  <!-- Vendor End -->
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Nuestra oficina</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Colombia </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+57 310 6977028</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@smartenergying.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.instagram.com/smartenergying/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100039844488415&mibextid=LQQJ4d"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.linkedin.com/in/smart-energy-ing-1b3b09318/?originalSubdomain=co"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Enlaces rápidos</h5>
+                    <a class="btn btn-link" href="about.html">Nosotros</a>
+                    <a class="btn btn-link" href="contact.html">Contacto</a>
+                    <a class="btn btn-link" href="service.html">Servicios</a>
+                    <a class="btn btn-link" href="project.html">Proyectos</a>
+                    <a class="btn btn-link" href="https://wa.me/+573106977028">Ayuda</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Horarios</h5>
+                    <p class="mb-1">Lunes - Viernes</p>
+                    <h6 class="text-light">08:00 am - 05:30 pm</h6>
+                    <p class="mb-1">Sabado - Domingo </p>
+                    <h6 class="text-light">Cerrado</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">
+                        Suscribete</h5>
+                    <p></p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Tu email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container text-center">
+            <p class="mb-2"> &copy; <a class="fw-semi-bold" href="#"> 2024 Smart Energy. Todos los derechos reservados.</a>
+            </p>
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
