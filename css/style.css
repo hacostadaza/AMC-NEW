@@ -19,7 +19,14 @@
     transition: all 0.3s;
 
 }
-
+.containerrgb .btn-31 {
+    padding: 0px;
+}
+.btn-31 .text {
+  color: black; /* Color del texto por defecto */
+  transition: color 0.3s ease;
+  font-size: 2REM;
+}
 .rgb-button:hover {
     background-color: rgb(38, 0, 255); /* Cambia a Verde al pasar el cursor */
     transform: scale(0.7);
@@ -209,6 +216,9 @@ h6,
 
 /*** Header ***/
 /* General Styles */
+#tituloexito {
+    font-size: 5rem;
+}
 .video-container {
     position: relative;
     width: 100%;
@@ -841,7 +851,12 @@ height: 100%;
     display: flex;
     align-items: center; /* Alinea el logo y el texto verticalmente */
 }
-
+.btn-whatsapp {
+  position: fixed;
+  bottom: 95px;     /* distancia desde la parte inferior */
+  right: 30px;      /* distancia desde la derecha */
+  z-index: 9999;    /* se asegura de que quede encima de todo */
+  }
 .navbar-brand .logo {
     max-height: 70px; /* Ajusta el tamaño máximo del logo según tu preferencia */
 
