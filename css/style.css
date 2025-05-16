@@ -585,6 +585,12 @@ h6,
     background: var(--primary);
 }
 
+/* accordion */
+.accordion .accordion-item {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
 
 /*** Project ***/
 #project{
@@ -890,8 +896,8 @@ height: 100%;
   
   .image-slider img {
     width: 100%; /* Ajusta el ancho de las imágenes */
-    height: 80px; /* Mantén la proporción de aspecto */
-    margin-right: 20px; /* Espacio entre imágenes */
+    height: 70px; /* Mantén la proporción de aspecto */
+    margin-right: 20px; /* Espacio entre imágenes */    
   }
   @keyframes slide-left {
     0% {
